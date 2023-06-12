@@ -1,5 +1,6 @@
 "use client"
 import { Poppins } from 'next/font/google';
+import Link from 'next/link';
 import React, { useState } from 'react'
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -19,7 +20,7 @@ const Navbar = () => {
         <div class=" py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div class="relative flex items-center justify-between">
             <div class="flex items-center">
-              <a
+              <Link
                 href="/"
                 aria-label="Company"
                 title="Company"
@@ -43,27 +44,27 @@ const Navbar = () => {
                 <span class="ml-2 text-xl font-bold tracking-wide font-[20px]">
                   resource<span className="text-prymary ml-1.5">it</span>
                 </span>
-              </a>
+              </Link>
               <ul class="flex items-center hidden space-x-8 lg:flex font-medium font-[15px] mt-1 popins.className">
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    href="/pages/findTalent"
                     aria-label="Our product"
                     title="Our product"
                     class="font-medium tracking-wide  transition-colors duration-200 hover:text-teal-accent-400"
                   >
                     Find Talents
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    href="/pages/findJobs"
                     aria-label="Our product"
                     title="Our product"
                     class="font-medium tracking-wide  transition-colors duration-200 hover:text-teal-accent-400"
                   >
                     Find Jobs
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a

@@ -7,7 +7,7 @@ import twt from "../../assets/icon/gg/Twitter.png";
 import ln from "../../assets/icon/gg/link.png";
 const Footer = () => {
   return (
-    <div className="border-t-[1px] w-full border-[#D9D9D9] mt-24">
+    <div className="border-t-[1px] w-full border-[#D9D9D9] ">
       <div className='className="mt-28 py-3  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"'>
         <div className="flex items-center justify-center ">
           <div>
@@ -15,11 +15,11 @@ const Footer = () => {
               Overcome Ignorance and <br /> Fight for Equality
             </h1>
             {/* input */}
-            <div className=" w-[331px] h-[41px] bg-[#FFFFFF] flex items-center justify-between mt-8 ml-10">
-              <div className="flex items-center justify-between">
-                <div className="">
+            <div className=" w-[331px] h-[41px] flex items-center justify-between mt-8 ml-10 bg-white ">
+              <div className="flex items-center justify-between ">
+                <div>
                   <input
-                    className="w-[180px]"
+                    className="w-[180px] p-2 outline-none"
                     type="text"
                     placeholder="Enter mobile number..."
                   />

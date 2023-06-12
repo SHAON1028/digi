@@ -24,7 +24,7 @@ const HeroSection = () => {
               <Image src={srcIcon} alt="" />
               <div className=" border-r-2 border-[#D9D9D9]">
                 <input
-                  className="w-[180px]"
+                  className="w-[180px]  outline-none"
                   type="text"
                   placeholder="Search Talent/ Jobs"
                 />

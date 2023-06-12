@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="">
       <div className="bg-[#F5F5F5]">
-        <Navbar></Navbar>
+       
         <HeroSection></HeroSection>
         <Hiring></Hiring>
         <Category></Category>
@@ -21,7 +21,7 @@ export default function Home() {
         <Count></Count>
         <Review></Review>
         <Company></Company>
-        <Footer></Footer>
+       
       </div>
     </main>
   );
