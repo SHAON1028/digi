@@ -4,34 +4,35 @@ import companyicon from "../../../assets/image/Group 124.png"
 const JobsCard = () => {
   return (
     <div className="border border-[#BCD1C8] flex mb-2">
-      <Image className="mt-3.5 ml-3 mb-3" src={companyicon} width={97} height={25} alt="" />
-      <div className="w-full">
+      <div className="flex items-center justify-center mr-4">
+        {" "}
+        <Image
+          className="mt-3.5 ml-3 mb-3 w-[97px] h-[20px]"
+          src={companyicon}
+          alt=""
+        />
+      </div>
+      <div className="">
         {/* 1 */}
-        <div className="flex items-center">
+        <div className="flex items-center justify-between mr-4">
           <div className="mt-[22px]">
-            <h1 className="font-semibold text-base">Bertha J. Shields</h1>
+            <h1 className="font-semibold text-base">
+              Hiring Freshers / Experienced People For BPO & KPO
+            </h1>
             <p className="text-[10px] font-normal">
               Hands on Salesforce Solution Architect
             </p>
           </div>
-          <div className="flex items-center justify-between ml-2">
-            <div className="w-[10px] h-[10px] bg-[#57A783] rounded-full mr-1.5"></div>
-            <p className=" text-[10px] font-normal mr-4">Open to work</p>
-            <button className="border border-[#006A44] text-[10px] font-normal py-1 px-3">
-              Full - Time
-            </button>
-          </div>
-          <button className="bg-prymary text-white text-xs px-9 py-2  font-normal ml-52">
-            Profile
+
+          <button className="bg-prymary text-white text-xs px-9 py-2  font-normal ml-5">
+            Full Details
           </button>
         </div>
         {/* txt */}
         <div>
           <p className="text-xs font-normal mt-1">
-            Hi there! Based in NYC, I am 6x Certified Salesforce
-            Admin/Dev/Consultant with excellent communication skills. I am
-            passionate about creating solutions that my clients wantas opposed
-            to a solution they have to deal with. I am also
+            Hiring Freshers / Experienced For BPO & KPO Related Profiles. Please
+            apply & our of our executive will get in touch with you.
           </p>
         </div>
         {/* skill */}
