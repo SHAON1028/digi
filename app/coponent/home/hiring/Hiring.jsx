@@ -82,7 +82,7 @@ const Hiring = () => {
             Work With Hand-Selected Talent
           </h1>
           <p className="text-sm font-normal">
-            Within days, we'll introduce you to the right talent
+            Within days, we will introduce you to the right talent
             <br /> for your project. Average time to match is under 24 hours.
           </p>
         </div>

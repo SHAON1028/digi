@@ -25,7 +25,7 @@ const Solution = () => {
               </p>
               {/* 1 */}
               <div className="flex gap-4 mb-2.5 ">
-                <Image src={rightarrow} />
+                <Image alt='' src={rightarrow} />
                 <p className="text-lg font-medium">
                   Connect to freelancers with proven business experience
                   {/* Get matched with the perfect talent by a
@@ -36,7 +36,7 @@ const Solution = () => {
               </div>
               {/* 2*/}
               <div className="flex gap-4 mb-2.5 ">
-                <Image src={rightarrow} />
+                <Image alt='' src={rightarrow} />
                 <p className="text-lg font-medium">
                   Get matched with the perfect talent by a customer success
                   manager
@@ -44,7 +44,7 @@ const Solution = () => {
               </div>
               {/* 3 */}
               <div className="flex gap-4 ">
-                <Image src={rightarrow} />
+                <Image alt='' src={rightarrow} />
                 <p className="text-lg font-medium">
                   Manage teamwork and boost productivity with one powerful
                   workspace
@@ -59,7 +59,7 @@ const Solution = () => {
 
         {/* right */}
         <div className="mt-12">
-          <Image src={solutionimg} />
+          <Image alt='' src={solutionimg} />
         </div>
       </div>
     </div>

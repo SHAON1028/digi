@@ -7,7 +7,7 @@ import JobsCard from '../JobCard/JobsCard';
 const ResultJobs = () => {
   return (
     <div>
-      <h1 className="text-3xl font-medium mt-5">Top Jobs</h1>
+      <h1 className="text-3xl font-medium mt-5">Find your top jobs</h1>
       <p className="text-xs font-medium text-[#7B7B7B] mb-2">
         5 lakh+ Talents for you to explore
       </p>

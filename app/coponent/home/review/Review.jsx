@@ -22,7 +22,7 @@ const Review = () => {
                 {/* profile */}
                 <div>
                   <div className="flex gap-2">
-                    <Image src={rimg} height={40} width={40} />
+                    <Image alt='' src={rimg} height={40} width={40} />
                     <div>
                       <p className="text-sm font-bold text-prymary">
                         Darin Nguyen

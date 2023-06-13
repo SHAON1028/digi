@@ -20,23 +20,23 @@ const Company = () => {
       <h1 className="text-[44px] font-medium">Top companies hiring now</h1>
       {/* company */}
       <div className="flex items-center  justify-evenly mt-10 ">
-        <Image src={one} />
-        <Image src={two} />
-        <Image src={seven} />
-        <Image src={four} />
-        <Image src={five} />
-        <Image src={six} />
+        <Image alt="" src={one} />
+        <Image alt=""src={two} />
+        <Image alt=""src={seven} />
+        <Image alt=""src={four} />
+        <Image alt=""src={five} />
+        <Image alt=""src={six} />
 
-        <Image src={three} />
+        <Image alt="" src={three} />
       </div>
       <div className="flex items-center justify-evenly ">
-        <Image src={eight} />
-        <Image src={nine} />
-        <Image src={twelve} />
-        <Image src={thirteen} />
-        <Image src={fourteen} />
-        <Image src={ten} />
-        <Image src={eleven} />
+        <Image alt="" src={eight} />
+        <Image alt="" src={nine} />
+        <Image alt="" src={twelve} />
+        <Image alt="" src={thirteen} />
+        <Image alt="" src={fourteen} />
+        <Image alt="" src={ten} />
+        <Image alt="" src={eleven} />
       </div>
 
       {/* company */}
