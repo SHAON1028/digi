@@ -40,7 +40,7 @@ const Highlight = () => {
         <h2 className="text-[#006A44] text-xs font-medium border-l-2 border-[#006A44] pl-3 mt-5">
           Your Job Match Score{" "}
         </h2>
-        <div className="ml-2 mt-0.5 flex">
+        <div className="ml-2 mt-0.5 flex flex-wrap">
           {[...Array(10)].map((item, id) => {
             return (
               <div key={id} className="flex items-center">
