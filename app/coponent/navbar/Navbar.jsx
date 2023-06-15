@@ -1,8 +1,12 @@
 "use client"
+import { Button, Modal } from 'flowbite-react';
 import { Poppins } from 'next/font/google';
 import Link from 'next/link';
 import React, { useState } from 'react'
 import { IoIosArrowDown } from "react-icons/io";
+import Login from '../login/Login';
+import Register from '../register/Register';
+
 
 const popins = Poppins({
   weight: ["400", "700"],
@@ -13,10 +17,11 @@ const popins = Poppins({
 const Navbar = () => {
 
      const [isMenuOpen, setIsMenuOpen] = useState(false);
+     const [closeModal,setCloseModal] = useState(true)
   return (
     <div>
       {/* header */}
-      <div class="">
+      <div class="bg-white">
         <div class=" py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div class="relative flex items-center justify-between">
             <div class="flex items-center">
@@ -41,11 +46,11 @@ const Navbar = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span class="ml-2 text-xl font-bold tracking-wide font-[20px]">
+                <span class="ml-2 text-xl font-bold tracking-wide ">
                   resource<span className="text-prymary ml-1.5">it</span>
                 </span>
               </Link>
-              <ul class="flex items-center hidden space-x-8 lg:flex font-medium font-[15px] mt-1 popins.className">
+              <ul class=" items-center hidden space-x-8 lg:flex font-medium font-[15px] mt-1 popins.className">
                 <li>
                   <Link
                     href="/pages/findTalent"
@@ -63,7 +68,102 @@ const Navbar = () => {
                     title="Our product"
                     class="font-medium tracking-wide  transition-colors duration-200 hover:text-teal-accent-400"
                   >
-                    Find Jobs
+                    <div>
+                      <div class="">
+                        <div class="dropdown inline-block relative">
+                          <button class=" py-2 px-4 rounded inline-flex items-center">
+                            <span class="mr-1">Find Jobs</span>
+                            <svg
+                              class="fill-current h-4 w-4"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                            >
+                              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />{" "}
+                            </svg>
+                          </button>
+                          <div>
+                            <ul class="dropdown-menu absolute left-[-300px] hidden shadow-shadow-2xl  bg-white pt-7 pl-12  ">
+                              <li class=" mr-4 ">
+                                <p className="text-base font-medium mb-4">
+                                  Category
+                                </p>
+                                <ul className="text-xs  text-[#545454] w-40 border-r-2 border-[#BCD1C8] pr-2 ">
+                                  <li className="mb-1.5">IT jobs</li>
+                                  <li className="mb-1.5">Sales jobs</li>
+                                  <li className="mb-1.5">Marketing jobs</li>
+                                  <li className="mb-1.5 ">Data Science jobs</li>
+                                  <li className="mb-1.5">HR jobs</li>
+                                  <li className="mb-1.5">Engineering jobs</li>
+                                </ul>
+                              </li>
+                              <li class=" mr-4 ">
+                                <p className="text-base font-medium mb-4">
+                                  Jobs in demand
+                                </p>
+                                <ul className="text-xs  text-[#545454] w-40 border-r-2 border-[#BCD1C8] pr-2 ">
+                                  <li className="mb-1.5">Fresher jobs</li>
+                                  <li className="mb-1.5">MNC jobs</li>
+                                  <li className="mb-1.5">Remote jobs</li>
+                                  <li className="mb-1.5 ">
+                                    Work from home jobs
+                                  </li>
+                                  <li className="mb-1.5">Walk-in jobs</li>
+                                  <li className="mb-1.5">Part-time jobs</li>
+                                </ul>
+                              </li>
+                              <li class=" mr-4 ">
+                                <p className="text-base font-medium mb-4">
+                                  Jobs by location
+                                </p>
+                                <ul className="text-xs  text-[#545454] w-40 border-r-2 border-[#BCD1C8] pr-2 ">
+                                  <li className="mb-1.5">Jobs in Dhaka</li>
+                                  <li className="mb-1.5">Jobs in Chottogram</li>
+                                  <li className="mb-1.5">Jobs in Khulna</li>
+                                  <li className="mb-1.5 ">DJobs in Sylhet </li>
+                                  <li className="mb-1.5">Jobs in Rajdhani </li>
+                                  <li className="mb-1.5">Jobs in Barisal</li>
+                                  <li className="mb-1.5">Jobs in Rangpur</li>
+                                </ul>
+                              </li>
+                              <li class=" mr-4 ">
+                                <p className="text-base font-medium mb-4">
+                                  Explore more jobs
+                                </p>
+                                <ul className="text-xs  text-[#545454] w-40 border-r-2 border-[#BCD1C8] pr-2 ">
+                                  <li className="mb-1.5">Jobs by category</li>
+                                  <li className="mb-1.5">Jobs by skill</li>
+                                  <li className="mb-1.5">Jobs by location</li>
+                                  <li className="mb-1.5 ">
+                                    Jobs by designation
+                                  </li>
+                                  <li className="mb-1.5">
+                                    Create free job alert
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="flex justify-center items-center mt-6  ">
+                                <div className=" w-64 ">
+                                  <p className="text-xl font-bold tracking-wide">
+                                    resource{" "}
+                                    <span className="text-[#006A44]">it</span>
+                                  </p>
+                                  <p className="italic font-bold text-xl text-[#006A44] mb-2">
+                                    FASTFORWARD
+                                  </p>
+                                  <p className="text-[#878787] text-xs font-normal py-1">
+                                    Not getting enough profile views?
+                                  </p>
+                                  <p className="text-sm font-semibold pr-0.5 text-[#006A44] pb-3 mb-2">
+                                    Get a Featured Profile & increase your
+                                    visibility to recruiters up to 3 times
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </Link>
                 </li>
                 <li>
@@ -88,8 +188,8 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <ul class="flex items-center hidden space-x-8 lg:flex">
-              <li className="border border-prymary py-[4px] pl-[33px] pe-[28px] flex  items-center">
+            <ul class=" items-center hidden space-x-8 lg:flex">
+              {/* <li className="border border-prymary py-[4px] pl-[33px] pe-[28px] flex  items-center">
                 <a
                   href="/"
                   aria-label="Sign in"
@@ -99,18 +199,60 @@ const Navbar = () => {
                   Login
                 </a>
                 <IoIosArrowDown />
-              </li>
-              <li className="flex items-center">
-                <a
+              </li> */}
+              {/* onClick={() => window.my_modal_2.showModal */}
+              {/* modal */}
+              {/* Open the modal using ID.showModal() method */}
+              <li className="border border-prymary py-[4px] pl-[33px]  flex  items-center">
+                <button
                   href="/"
+                  aria-label="Sign in"
+                  title="Sign in"
+                  onClick={() => window.my_modal_2.showModal()}
+                  class="font-medium tracking-wide  text-prymary pr-[8px] gap-3 flex items-center transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                  Login <IoIosArrowDown />
+                </button>
+              </li>
+              {closeModal && (
+                <dialog id="my_modal_2" className="modal modal-top modal-right">
+                  <form method="dialog" className="modal-box">
+                    <Login setCloseModal={setCloseModal}></Login>
+                  </form>
+                  <form method="dialog" className="modal-backdrop">
+                    <button>close</button>
+                  </form>
+                </dialog>
+              )}
+              {/* modal */}
+              <li className="flex items-center">
+                <button
                   class="font-medium tracking-wide   pr-[8px]  transition-colors duration-200 hover:text-teal-accent-400"
                   aria-label="Sign up"
                   title="Sign up"
+                  onClick={() => {
+                     setCloseModal(true);
+                     setTimeout( window.my_modal_3.showModal(),1000)
+                    }
+                  }
                 >
                   Registration
-                </a>
+                </button>
                 <IoIosArrowDown />
               </li>
+              { closeModal &&
+                <dialog
+                  id="my_modal_3"
+                  className="modal modal-top modal-right "
+                >
+                  <form method="dialog" className="modal-box">
+                    <Register setCloseModal={setCloseModal}></Register>
+                  </form>
+                  <form method="dialog" className="modal-backdrop">
+                    <button>close</button>
+                  </form>
+                </dialog>
+              }
             </ul>
             <div class="lg:hidden">
               <button

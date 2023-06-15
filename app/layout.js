@@ -17,10 +17,11 @@ export default function RootLayout({ children }) {
         <div className="bg-[#F5F5F5]">
           <Navbar></Navbar>
         </div>
-        <main  className="bg-[#F5F5F5]">{children}</main>
+        <main className="bg-[#F5F5F5]">{children}</main>
         <div className="bg-[#F5F5F5]">
           <Footer></Footer>
         </div>
+        
       </body>
     </html>
   );

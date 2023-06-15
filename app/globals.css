@@ -25,3 +25,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  display: flex;
+  
+}
+.modal-right{
+  width: 40%;
+  left:1100px
+}
