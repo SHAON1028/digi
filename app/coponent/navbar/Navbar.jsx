@@ -82,7 +82,7 @@ const Navbar = () => {
                             </svg>
                           </button>
                           <div>
-                            <ul class="dropdown-menu absolute left-[-300px] hidden shadow-shadow-2xl  bg-white pt-7 pl-12  ">
+                            <ul class="dropdown-menu absolute left-[-300px] hidden shadow-shadow-2xl   bg-white pt-7 pl-12  ">
                               <li class=" mr-4 ">
                                 <p className="text-base font-medium mb-4">
                                   Category

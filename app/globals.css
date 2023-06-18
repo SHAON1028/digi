@@ -26,6 +26,61 @@ body {
     rgb(var(--background-start-rgb));
 } */
 
+.form-element {
+ 
+ 
+  height:100px;
+}
+.form-element input {
+  display:none;
+}
+.form-element label {
+  width:100%;
+
+  height:100%;
+  cursor:pointer;
+  border:1px solid #97B5A8;
+  background: #ffff;
+  transition:all 200ms ease-in-out;
+ 
+}
+.form-element .icon {
+  margin-top:10px;
+  font-size:30px;
+  color:#555;
+  transition:all 200ms ease-in-out;
+}
+.form-element .title {
+  font-size:16px;
+  padding:5px 0px;
+  transition:all 200ms ease-in-out;
+}
+.form-element label:before {
+  content:"✓";
+  position:absolute;
+  width:18px;
+  height:18px;
+  top:-6px;
+  right:-2px;
+  background:#2D6A4F;
+  color:#fff;
+  text-align:center;
+  line-height:18px;
+  font-size:14px;
+  font-weight:600;
+  border-radius:50%;
+  opacity:0;
+  transform:scale(0.5);
+  transition:all 200ms ease-in-out;
+}
+.form-element input:checked + label:before {
+  opacity:1;
+  transform:scale(1);
+}
+
+.form-element input:checked + label {
+  border:1px solid #97B5A8;
+}
 .dropdown:hover .dropdown-menu {
   display: block;
   display: flex;
